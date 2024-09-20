@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="RegistrationApp.MainWindow"
+        Title="Registration"
+        Width="700" Height="250">
+        <StackPanel Margin="20">
+            <TextBlock Text="Введіть логін (тільки латинські літери):"/>
+            <TextBox Name = "LoginTextBox"/>
+            
+            <TextBlock Text="Введіть пароль (тільки латинські літери):"/>
+            <TextBox Name = "PasswordTextBox"/>
+            
+            <Button Content="Зареєструватися" Click="OnRegisterClick" Margin="0,10,0,0"/>
+            
+            <TextBlock Name="ResultTextBlock" Foreground="Red" Margin="0,10,0,0"/>
+        </StackPanel>
+</Window>
